@@ -1,0 +1,28 @@
+body {
+    /* background-color: #FFD5C2; */
+    background-image: url('../orangecream.jpg');
+    text-align: center;
+    font-size: larger;
+    font-family: 'Bubblegum Sans';
+    border-style: inset dotted;
+}
+
+img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+p {
+    color: #ffffff;
+    background-position: 50%;
+    background-image: url('../bluebackground.jpg');
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #684510;
+}
+
+h2 {
+    color: #3E2F4A;
+}

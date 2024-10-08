@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-image: url("../sans.jpg");
+    background-blend-mode: lighten;
+    text-shadow: 0cqi;
+    font-family: 'Bubblegum Sans';
+}
+
+nav a:link, nav a:visited {
+    color:aqua;
+    background-color: black;
+}
+
+h1 {
+    color:rgb(235, 130, 217);
+
+}
+
+.name {
+    font-size: larger;
+    font-family: 'Comic Sans MS';
+    color:white;
+}
+
+span {
+    background-color: black;
+    padding: 10px;
+}
