@@ -4,16 +4,22 @@
 
 body {
     background-color: gray;
+    margin: 0;
+    padding: 0;
 }
 
 .rounded_border {
-    display: inline;
-    width: 200px;
+    width: 20%;
     border-radius: 50%;
     border: 20px rgb(49, 49, 49) solid;
     margin: 20px 50px;
 }
 
 div {
-    display: inline;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0;
+
 }
