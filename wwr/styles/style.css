@@ -171,9 +171,12 @@ nav a:hover {
     height: 110%;
     line-height: 1.5em;
     padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.msg {
     grid-column: 6/10;
     grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .home-title {
@@ -188,12 +191,12 @@ h4 {
     color:#ec29ab;
 }
 
-.msg h2 {
+.msg h2, .juped-msg h2 {
     color:#EE6F2D;;
     font-family: 'Barrio', 'Courier New', Courier, monospace;
 }
 
-.msg p {
+.msg p, .juped-msg p {
     color:#ec29ab;
     font-size: .8em;
     padding-bottom: 15px;
@@ -201,6 +204,9 @@ h4 {
 
 #smile-img {
     max-height: 500px;
+    grid-column: 2/3;
+    justify-self: center;
+    align-self: center;
 }
 
 footer {
@@ -233,6 +239,60 @@ footer a:hover {
 
 footer .social img {
     padding-top: 15px;
+}
+
+.juped-main {
+    width: 80%;
+    justify-self: center;
+}
+
+.idiot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 200px auto;
+    align-items: center;
+}
+
+#idiot-laugh {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 1;
+    font-size: 5em;
+    color:#ec29ab;
+    font-family: 'Barrio', 'Courier New', Courier, monospace;
+}
+
+.smile1 {
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.smile2 {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.smile3 {
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.juped-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 200px;
+    background-color: #6CDCE6;
+    padding: 60px;
+}
+
+.juped-msg {
+    width: 100%;
+    grid-column: 1/2;
+    font-family: 'Atma', Georgia, 'Times New Roman', Times, serif;
 }
 
 @media screen and (max-width: 900px) {
