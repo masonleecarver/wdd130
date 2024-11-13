@@ -1,0 +1,54 @@
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    grid-column: 2/3;
+    overflow: hidden;
+}
+
+.rounded-section {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.heading {
+    line-height: 40%;
+    padding: 20px;
+}
+
+.heading h3 {
+    color: steelblue;
+}
+
+.article {
+    margin: 0px 20px;
+    color: gray;
+    align-self: center;
+}
+
+#footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20vh;
+    background-color: rgb(22, 57, 85);
+    text-align: center;
+    color: white;
+}
+
+#part-1, #part-2, #part-3 {
+    border: .5px solid white;
+}
