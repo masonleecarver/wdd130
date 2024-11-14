@@ -9,8 +9,9 @@ main {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border-radius: 7%;
+    border-radius: 20px;
     grid-column: 2/3;
+    font-family: 'Roboto Slab', serif;
     overflow: hidden;
 }
 
