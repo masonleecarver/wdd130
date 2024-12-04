@@ -14,6 +14,7 @@ main {
 }
 
 header {
+    z-index: 20;
     width: 100%;
     display: grid;
     padding: 1em;
@@ -138,38 +139,123 @@ nav a:hover {
     color: #000000;
 }
 
-.aside-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+.char-main {
+    margin: 0px auto;
+    padding-right: 200px;
+    width: 70%;
+    text-align: center;
 }
 
-aside {
-    width: 200px;
-    background-color: #f7d792;
-    padding: 20px;
-}
-
-aside a {
-    text-decoration: none;
-    font-family: "Geo";
-
+.char-name {
+    font-family: "Barrio";
+    font-size: 3em;
+    padding: 50px;
+    color:rgb(180, 112, 34);
 }
 
 .char-top {
     width: 100%;
-    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #341f4a;
+    border-radius: 200px;
     overflow: hidden;
-    flex: 1;
+    /* padding: 20px; */
 }
 
 .char-head {
-    float: left;
+    grid-column: 1/2;
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
 }
 
 .char-basics {
-    padding: 50px;
+    grid-column: 2/3;
+    font-family: "Geo";
+    font-size: 1.5em;
+    align-self: center;
+    padding: 35px;
     text-align: left;
+}
+
+figure {
+    line-height: 300%;
+    font-family: "Geo";
+    font-size: 18px;
+    padding-top: 60px;
+}
+
+audio {
+    width: 100%;
+}
+
+.info-dump {
+    font-family: "Geo";
+    text-align: left;
+    width: 65%;
+    justify-self: center;
+    color: #f09b3a;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.body-ref {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.char-main h2 {
+    font-family: "Barrio";
+    font-size: 2em;
+    color: #ff405c;
+}
+
+.relationships {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.personal-relation {
+    font-family: "Geo";
+    margin: 20px;
+    padding: 10px;
+    background-color: #341f4a;
+    font-size: 18px;
+    border-radius: 80px;
+    align-self: center;
+    justify-self: center;
+}
+
+.personal-relation h3 {
+    font-family: "Barrio";
+    color:#f59e4e;
+}
+.sidebar {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Barrio";
+    padding-right: 20px;
+    /* background-color: #c2a07a; */
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Geo";
+    display: block;
+}
+
+.sidebar a:hover {
+    color: white;
 }
 
 figure {
@@ -177,6 +263,8 @@ figure {
 }
 
 footer {
+    position: absolute;
+    z-index: 20;
     background-color: rgb(180, 112, 34);
     color: white;
     font-family: 'Times New Roman', Times, serif;
