@@ -21,6 +21,7 @@ header {
     grid-template-columns: 150px auto;
     font-family: "Geo";
     background-color: rgba(240, 155, 58, .5);
+    position: relative;
 }
 
 nav {
@@ -228,6 +229,10 @@ audio {
     justify-self: center;
 }
 
+.personal-relation:hover {
+    transform: scale(1.1);
+}
+
 .personal-relation h3 {
     font-family: "Barrio";
     color:#f59e4e;
@@ -260,6 +265,113 @@ audio {
 
 figure {
     margin: 50px;
+}
+
+#disney-img {
+    z-index: -1;
+    width: 100%;
+    grid-column: 1/-1;
+    grid-row: 1/3;
+    opacity: 60%;
+}
+
+#disney-top {
+    display: grid;
+    grid-template-columns: 250px 300px auto;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-top: -150px;
+}
+
+#disney-msg {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    justify-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.2em;
+    margin-top: -50px;
+}
+
+#disney-msg h2 {
+    font-family: "Barrio";
+    color:#000000;
+    background-color: #EE6F2D;
+    border-radius: 50px;
+}
+
+#disney-msg p {
+    font-family: "Geo";
+    width: 80%;
+}
+
+.disney-heading {
+    text-align: left;
+    font-family: "Barrio";
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+#season1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.episode {
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    background-color: #341f4a;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.episode img {
+    width: 100%;
+}
+
+.episode h4 {
+    font-family: "Barrio";
+    font-size: 30px;
+}
+
+.episode p {
+    font-family: "Geo";
+    color:#EE6F2D;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.episode:hover {
+    transform: scale(1.1);
+}
+
+.season2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+#big-chev {
+    grid-column: 1/2;
+    grid-row: 1;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.arcs {
+    grid-column: 2/3;
+    font-family: "Geo";
+    font-size: 20px;
+    align-self: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 footer {
