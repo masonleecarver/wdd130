@@ -257,6 +257,7 @@ audio {
     font-size: 25px;
     font-family: "Geo";
     display: block;
+    background-color:#c7833a;
 }
 
 .sidebar a:hover {
