@@ -1,414 +1,556 @@
-@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Geo:ital@0;1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Barrio&family=Geo:ital@0;1&display=swap");
 
 body {
-    background-color: black;
-    color: white;
-    padding: 0px;
-    margin: 0px;
+  background-color: black;
+  color: white;
+  padding: 0px;
+  margin: 0px;
 }
 
 main {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
-    z-index: 20;
-    width: 100%;
-    display: grid;
-    padding: 1em;
-    grid-template-columns: 150px auto;
-    font-family: "Geo";
-    background-color: rgba(240, 155, 58, .5);
-    position: relative;
+  z-index: 20;
+  width: 100%;
+  display: grid;
+  padding: 1em;
+  grid-template-columns: 150px auto;
+  font-family: "Geo";
+  background-color: rgba(240, 155, 58, 0.5);
+  position: relative;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    font-size: 1.5em;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5em;
 }
 
-nav a, #hero-msg h1, #hero-msg h4, .button-box, main {
-    text-align: center;
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main {
+  text-align: center;
 }
 
 nav a {
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    align-self: center;
-    padding: 5px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  align-self: center;
+  padding: 5px;
 }
 
 nav a:hover {
-    background-color: #EE6F2D;
-    color: white;
+  background-color: #ee6f2d;
+  color: white;
 }
 
 .logo {
-    width: 80px;
-    justify-self: center;
+  width: 80px;
+  justify-self: center;
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr 1fr 1fr;
-    margin-top: -150px;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: -150px;
+  justify-items: center;
+  align-items: center;
 }
 
 #main-img {
-    grid-column: 1/6;
-    grid-row: 1/4;
-    width: 100%;
-    z-index: -1;
+  grid-column: 1/6;
+  grid-row: 1/4;
+  width: 100%;
+  z-index: -1;
 }
 
 #hero-msg {
-    grid-column: 2/5;
-    grid-row: 2/3;
-    z-index: 1;
-    justify-self: center;
-    align-self: center;
+  grid-column: 2/5;
+  grid-row: 2/3;
+  z-index: 1;
+  justify-self: center;
+  align-self: center;
 }
 
 #hero-msg h1 {
-    font-size: 4.5em;
-    font-family: "Barrio";
-    color: black;
+  font-size: 4.5em;
+  font-family: "Barrio";
+  color: rgb(243, 17, 17);
 }
 
 #hero-msg h4 {
-    font-family: "Geo";
-    font-size: 2em;
-    color: #f09b3a;
+  font-family: "Geo";
+  font-size: 2em;
+  color: #f09b3a;
 }
 
 #hero-msg span {
-    background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logline {
-    width: 50%;
-    margin: 0 auto;
-    padding: 50px;
-    font-family: "Geo";
-    font-size: 1.25em;
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: "Geo";
+  font-size: 1.25em;
+  text-align: center;
 }
 
 .general p {
-    font-family: "Geo";
-    color: black;
-    padding: 50px;
-    font-size: 1.2em;
-    text-align: left;
-    justify-self: left;
+  font-family: "Geo";
+  color: black;
+  padding: 50px;
+  font-size: 1.2em;
+  text-align: left;
+  justify-self: left;
 }
 
 .general img {
-    float: right;
-    margin-left: 50px;
+  float: right;
+  margin-left: 50px;
 }
 
 .general {
-    width: 100%;
-    margin: 0 auto;
-    background-color: #f09b3a;
-    border-radius: 20px;
-    overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f09b3a;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .button-box {
-    margin: 100px auto;
-    background-color: #f09b3a;
-    font-family: "Barrio";
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 30px;
-    width: 400px;
+  margin: 100px auto;
+  background-color: #f09b3a;
+  font-family: "Barrio";
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
 }
 
 .first-link {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .first-link:hover {
-    color: #000000;
+  color: #000000;
 }
 
 .char-main {
-    margin: 0px auto;
-    padding-right: 200px;
-    width: 70%;
-    text-align: center;
+  margin: 0px auto;
+  padding-right: 200px;
+  width: 70%;
+  text-align: center;
 }
 
 .char-name {
-    font-family: "Barrio";
-    font-size: 3em;
-    padding: 50px;
-    color:rgb(180, 112, 34);
+  font-family: "Barrio";
+  font-size: 3em;
+  padding: 50px;
+  color: rgb(180, 112, 34);
 }
 
 .char-top {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: #341f4a;
-    border-radius: 200px;
-    overflow: hidden;
-    /* padding: 20px; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #341f4a;
+  border-radius: 200px;
+  overflow: hidden;
+  /* padding: 20px; */
 }
 
 .char-head {
-    grid-column: 1/2;
-    border-radius: 5px;
-    justify-self: center;
-    align-self: center;
-    width: 100%;
+  grid-column: 1/2;
+  border-radius: 5px;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
 }
 
 .char-basics {
-    grid-column: 2/3;
-    font-family: "Geo";
-    font-size: 1.5em;
-    align-self: center;
-    padding: 35px;
-    text-align: left;
+  grid-column: 2/3;
+  font-family: "Geo";
+  font-size: 1.5em;
+  align-self: center;
+  padding: 35px;
+  text-align: left;
 }
 
 figure {
-    line-height: 300%;
-    font-family: "Geo";
-    font-size: 18px;
-    padding-top: 60px;
+  line-height: 300%;
+  font-family: "Geo";
+  font-size: 18px;
+  padding-top: 60px;
 }
 
 audio {
-    width: 100%;
+  width: 100%;
 }
 
 .info-dump {
-    font-family: "Geo";
-    text-align: left;
-    width: 65%;
-    justify-self: center;
-    color: #f09b3a;
-    font-size: 20px;
-    padding-bottom: 30px;
+  font-family: "Geo";
+  text-align: left;
+  width: 65%;
+  justify-self: center;
+  color: #f09b3a;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .body-ref {
-    border-radius: 30px;
-    width: 100%;
+  border-radius: 30px;
+  width: 100%;
 }
 
 .char-main h2 {
-    font-family: "Barrio";
-    font-size: 2em;
-    color: #ff405c;
+  font-family: "Barrio";
+  font-size: 2em;
+  color: #ff405c;
 }
 
 .relationships {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .personal-relation {
-    font-family: "Geo";
-    margin: 20px;
-    padding: 10px;
-    background-color: #341f4a;
-    font-size: 18px;
-    border-radius: 80px;
-    align-self: center;
-    justify-self: center;
+  font-family: "Geo";
+  margin: 20px;
+  padding: 10px;
+  background-color: #341f4a;
+  font-size: 18px;
+  border-radius: 80px;
+  align-self: center;
+  justify-self: center;
 }
 
 .personal-relation:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .personal-relation h3 {
-    font-family: "Barrio";
-    color:#f59e4e;
+  font-family: "Barrio";
+  color: #f59e4e;
 }
 .sidebar {
-    height: 100%;
-    width: 220px;
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    overflow-x: hidden;
-    padding-top: 30px;
-    text-align: center;
-    font-family: "Barrio";
-    padding-right: 20px;
-    /* background-color: #c2a07a; */
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Barrio";
+  padding-right: 20px;
+  /* background-color: #c2a07a; */
 }
 
 .sidebar a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    font-family: "Geo";
-    display: block;
-    background-color:#c7833a;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Geo";
+  display: block;
+  background-color: #c7833a;
 }
 
 .sidebar a:hover {
-    color: white;
+  color: white;
+}
+
+.mobile-menu {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  /* position: absolute;
+  left: -9999; */
 }
 
 figure {
-    margin: 50px;
+  margin: 50px;
 }
 
 #disney-img {
-    z-index: -1;
-    width: 100%;
-    grid-column: 1/-1;
-    grid-row: 1/3;
-    opacity: 60%;
+  z-index: -1;
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1/3;
+  opacity: 60%;
 }
 
 #disney-top {
-    display: grid;
-    grid-template-columns: 250px 300px auto;
-    grid-template-rows: 1fr 1fr;
-    width: 100%;
-    margin-top: -150px;
+  display: grid;
+  grid-template-columns: 250px 300px auto;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  margin-top: -150px;
 }
 
 #disney-msg {
-    text-align: center;
-    align-self: center;
-    justify-self: center;
-    justify-items: center;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-size: 1.2em;
-    margin-top: -50px;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  justify-items: center;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-size: 1.2em;
+  margin-top: -50px;
 }
 
 #disney-msg h2 {
-    font-family: "Barrio";
-    color:#000000;
-    background-color: #EE6F2D;
-    border-radius: 50px;
+  font-family: "Barrio";
+  color: #000000;
+  background-color: #ee6f2d;
+  border-radius: 50px;
 }
 
 #disney-msg p {
-    font-family: "Geo";
-    width: 80%;
+  font-family: "Geo";
+  width: 80%;
 }
 
 .disney-heading {
-    text-align: left;
-    font-family: "Barrio";
-    font-size: 30px;
-    padding-top: 30px;
+  text-align: left;
+  font-family: "Barrio";
+  font-size: 30px;
+  padding-top: 30px;
 }
 
 #season1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .episode {
-    justify-self: center;
-    justify-items: center;
-    align-self: center;
-    text-align: center;
-    background-color: #341f4a;
-    margin: 20px;
-    border-radius: 30px;
-    overflow: hidden;
+  justify-self: center;
+  justify-items: center;
+  align-self: center;
+  text-align: center;
+  background-color: #341f4a;
+  margin: 20px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .episode img {
-    width: 100%;
+  width: 100%;
 }
 
 .episode h4 {
-    font-family: "Barrio";
-    font-size: 30px;
+  font-family: "Barrio";
+  font-size: 30px;
 }
 
 .episode p {
-    font-family: "Geo";
-    color:#EE6F2D;
-    padding: 10px;
-    font-size: 18px;
+  font-family: "Geo";
+  color: #ee6f2d;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .episode:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .season2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding-bottom: 100px;
-    padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
 #big-chev {
-    grid-column: 1/2;
-    grid-row: 1;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+  grid-column: 1/2;
+  grid-row: 1;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .arcs {
-    grid-column: 2/3;
-    font-family: "Geo";
-    font-size: 20px;
-    align-self: center;
-    padding: 20px;
-    box-sizing: border-box;
+  grid-column: 2/3;
+  font-family: "Geo";
+  font-size: 20px;
+  align-self: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 footer {
-    position: absolute;
-    z-index: 20;
-    background-color: rgb(180, 112, 34);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    padding: 25px 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  position: absolute;
+  z-index: 20;
+  background-color: rgb(180, 112, 34);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding: 25px 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-img {
-    margin: 20px;
+  margin: 20px;
 }
 
 footer p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 footer p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer a {
-    color:black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 footer a:hover {
-    color:#ffffff;
+  color: #ffffff;
 }
 
 footer .social img {
-    padding-top: 15px;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    padding: 10px;
+    grid-template-columns: 5em auto;
+  }
+
+  #hero-msg h1 {
+    font-size: 2.5em;
+  }
+
+  #hero-msg h4 {
+    font-size: 1em;
+  }
+
+  .logline {
+    padding: 20px;
+  }
+
+  #logo_1 {
+    max-width: 100%;
+  }
+
+  #orange {
+    max-width: 50%;
+  }
+
+  .button-box {
+    font-size: 1em;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 75%;
+  }
+
+  .mobile-menu {
+    display: block;
+    justify-self: center;
+    justify-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: "Barrio";
+  }
+
+  .mobile-menu a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: "Geo";
+    display: block;
+    background-color: #c7833a;
+  }
+
+  .char-main {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .char-top {
+    border-radius: 50px;
+  }
+
+  figure {
+    font-size: 0.75em;
+    padding-top: 30px;
+  }
+
+  .char-basics {
+    font-size: 1em;
+    align-self: left;
+    padding: 20px;
+    text-align: left;
+    margin-left: -15px;
+  }
+
+  .info-dump {
+    width: 65%;
+    font-size: 1em;
+    padding-bottom: 30px;
+  }
+
+  .relationships {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  #disney-top {
+    grid-template-columns: 60px auto;
+    margin-top: 0px;
+  }
+
+  #disney-img {
+    opacity: 100%;
+  }
+
+  #season1 {
+    display: block;
+  }
+
+  #big-chev {
+    display: none;
+  }
+
+  .arcs {
+    grid-column: 1/3;
+    margin-top: -75px;
+  }
+
+  #mobile-big-chev {
+    max-width: 100%;
+    margin-bottom: 50px;
+    margin-top: -50px;
+  }
+
+  footer {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #footer-img {
+    max-width: 100%;
+    margin: 5px;
+  }
 }
