@@ -378,6 +378,10 @@ figure {
   box-sizing: border-box;
 }
 
+#mobile-big-chev {
+  display: none;
+}
+
 .arcs {
   grid-column: 2/3;
   font-family: "Geo";
@@ -538,6 +542,7 @@ footer .social img {
   }
 
   #mobile-big-chev {
+    display: block;
     max-width: 100%;
     margin-bottom: 50px;
     margin-top: -50px;
