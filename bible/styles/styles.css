@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Barrio&family=Geo:ital@0;1&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   color: white;
   padding: 0px;
+  margin: 0;
   position: absolute;
   width: 100%;
 }
@@ -57,20 +62,21 @@ nav a:hover {
   justify-self: center;
 }
 
-.hero {
+/* .hero {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
   margin-top: -150px;
   justify-items: center;
   align-items: center;
-}
+} */
 
-#main-img {
+/* #main-img {
   grid-column: 1/6;
   grid-row: 1/4;
   width: 100%;
   z-index: -1;
+  height: auto;
 }
 
 #hero-msg {
@@ -79,12 +85,38 @@ nav a:hover {
   z-index: 1;
   justify-self: center;
   align-self: center;
+} */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto; /* will auto-expand with the image */
+  margin-top: -150px;
+}
+
+#main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#hero-msg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 90%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5); /* optional, for contrast */
+  border-radius: 50px;
 }
 
 #hero-msg h1 {
   font-size: 4.5em;
   font-family: "Barrio";
-  color: rgb(243, 17, 17);
+  color: rgb(226, 194, 194);
 }
 
 #hero-msg h4 {
@@ -443,6 +475,7 @@ footer .social img {
     width: 100vw;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   main {
@@ -452,7 +485,7 @@ footer .social img {
   }
 
   .hero {
-    margin-bottom: -160px;
+    margin-top: 0px;
   }
 
   #hero-msg h1 {
@@ -505,6 +538,7 @@ footer .social img {
     margin: 0px auto;
     width: 100%;
     text-align: center;
+    padding-right: 0;
   }
 
   .char-top {
@@ -533,6 +567,10 @@ footer .social img {
   .relationships {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .personal-relation {
+    border-radius: 20%;
   }
 
   .sidebar {
