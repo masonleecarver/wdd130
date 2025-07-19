@@ -537,6 +537,10 @@ footer .social img {
 
   .sidebar {
     display: none;
+    width: 0px;
+    height: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   #disney-top {
